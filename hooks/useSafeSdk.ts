@@ -28,17 +28,6 @@ const useSafeSdk = (userSigner, safeAddress) => {
         if (!safeAddress) {
           return null;
         }
-        /*
-        // If the Safe contracts are not deployed in the current network, you can deploy them and pass the addresses to the SDK:
-        const id = await ethAdapter.getChainId()
-        const contractNetworks = {
-          [id]: {
-            multiSendAddress: <MULTI_SEND_ADDRESS>,
-            safeMasterCopyAddress: <MASTER_COPY_ADDRESS>,
-            safeProxyFactoryAddress: <PROXY_FACTORY_ADDRESS>
-          }
-        }
-        */
         const safeSdk = await Safe.create({
           ethAdapter,
           safeAddress
