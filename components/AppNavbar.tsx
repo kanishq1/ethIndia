@@ -15,9 +15,6 @@ export default function AppNavbar() {
           <Link href="/">
             <div className="flex items-center cursor-pointer">
               <div className="text-xl font-bold ">Gnosis safe</div>
-              <div className="ml-2 block rounded-full bg-gray-700 px-2 py-0.5 text-xs font-semibold text-white ">
-                next starter
-              </div>
             </div>
           </Link>
           <div className="flex justify-center space-x-6 md:order-2">
